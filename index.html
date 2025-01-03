@@ -6,7 +6,7 @@
     <title>Doar - A Voz do República</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         body{
@@ -116,7 +116,7 @@
         padding-bottom:1.5rem;
        }
        .footer-container{
-        margin-top: 6rem;
+        margin-top: 30rem;
         background-color: #2867ce;
         margin-bottom: 0rem;
         text-align: center;
@@ -148,10 +148,10 @@
         margin-bottom: auto;
        }
        .pagamento > h3{
-        font-weight: 500;
+        font-weight: 400;
         font-size: 2.4rem;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-bottom: 1.25rem;
+        margin-top: 0rem;
        }
        .pagamento > img{
         margin-left: auto;
@@ -165,11 +165,15 @@
         margin-top: 1rem;
        }
        .pagamento{
-        height: 40rem;
+        height: 35rem;
         justify-items: center;
         width: 40rem;
         margin-left: auto;
         margin-right: auto;
+        border: solid #D9D9D9 5px;
+        border-top: 0;
+        border-bottom: 0;
+        margin-top: 2rem;
        }
        .botoes{
         display: flex;
@@ -179,7 +183,8 @@
         justify-content: space-around;
         flex-wrap: wrap;
         row-gap: 0;
-        margin-top: 0.8rem;
+        margin-top: 2rem;
+        scale: 1.1;
        }
        .botao.um, .botao.dois, .botao.tres{
         width: 8rem;
@@ -235,17 +240,21 @@
       border-right: solid 1px black;
     }
     .progresso{
-        position: absolute;
-        right: 0;
+        margin-left: auto;
         display: flex;
         column-gap: 11rem;
         flex-wrap: wrap;
-        margin-top: -38rem;
+        margin-top: -35rem;
         width: 22rem;
-        margin-right: 3.5vw;
+        margin-right: 3vw;
     }
     .progresso > #pt{
-        font-weight: 700;
+        font-weight: 400;
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: space-around; 
+        width: 100%; 
+        align-self: center;
     }
     .progresso > #valor{
         font-size: 1.2rem;
@@ -262,25 +271,46 @@
         color: #616161;
     }
     .pedinte{
-        position: absolute;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 27rem;
-        flex-wrap: wrap;
-        height: 32rem;
-        margin-left: 1rem;
         margin-top: 2.5rem;
+        width: 25rem;
+        height: 38rem;
+        position: absolute;
+        margin-left: 3.25rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 15rem;
+        row-gap: 0;
     }
-    .pedinte > img{
-        margin-top: 4rem;
-        height: 24rem;
-        margin-top: -1rem;
-    }
-    .pedinte > p{
+    .pedinte > h3{
         font-weight: 400;
-        font-size: 1.6rem;
-        text-align: justify;
+        font-size: 2.4rem;
+        margin-top: 0rem;
+        height: 0.2rem;
+    }
+    .pedinte  li {
+            background-color: #2867ce;
+            display: flex;
+            margin-bottom: 0.5rem;
+            padding-top: 0.35rem;
+            padding-bottom: 0.35rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: white;
+            list-style-type: none;
+            width: 24.5rem;
+            border-radius: 5px;
+            padding-left: 1rem;
+    }
+    .pedinte ul{
+        margin-top: 1rem;
+    }
+    .pedinte span{
+        color: white;
+        padding-right: 1rem;
+    }
+    .pedinte #quantidade{
+    margin-left: auto;
     }
 @media screen and (max-width:1500px){
     footer {
@@ -293,15 +323,24 @@
     .progresso{
         margin-right: 0;
     }
-    .pedinte{
-        scale: 0.8;
+    .pagamento{
+        padding-left: 0rem;
+        padding-right: 0rem;
+        width: 32rem;
+    }
+    .progresso{
+        scale: 0.9;
+    }
+    .pedinte  li {
+            width: 17rem;
+    }
+    .pedinte {
         margin-left: -2rem;
     }
-    
 }
 @media screen and (max-width:1150px){
 .footer-container{
-    margin-top: 20rem;
+    margin-top: 45rem;
 }
 footer{
     height: 20vh;
@@ -327,7 +366,16 @@ a{
         justify-content: center;
     }
     .pedinte{
-        display: none;
+        margin-top: 15rem;
+        top: 50%;
+        left: 50%;
+        margin-left: 0;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+    }
+    .pedinte li{
+        width: 40rem;
     }
 }
 
@@ -384,7 +432,7 @@ a{
     }
     .botoes{
         display: flex;
-        width: 100vw;
+        width: 95vw;;
         height: 15rem;
         justify-content: center;
         justify-content: space-around;
@@ -409,6 +457,7 @@ a{
         width: 23rem;
         margin-left: auto;
         margin-right: auto;
+        border: none;
        }
        .pagamento > h3{
         font-size: 2rem
@@ -426,9 +475,6 @@ a{
        .progresso > h3{
         text-align: center;
        }
-        .progresso{
-            margin-top:6rem;
-        }
        progress{
         margin-top: -1.5rem;
        }
@@ -437,6 +483,25 @@ a{
        }
        .pagamento > p {
         text-align: center;
+       }
+       .progresso{
+        margin-top: 10rem;
+       }
+       .footer-container{
+        margin-top: 45rem;
+       }
+       .botao:hover{
+        background-color: #2867ce;
+        color: white;
+        box-shadow: #c5c5c5 -4px 3px;
+       }
+       .progresso > #pt{
+       }
+       .pedinte {
+        margin-top: 20rem;
+       }
+       .pedinte li{
+        width: 95vw;
        }
 }
 
@@ -455,8 +520,19 @@ a{
        <header> <nav> <a href="" id="hyper">Notícias</a> <a href="Blog rework.html"  id="hyper">Blog</a>  <a href=""  id="hyper">Membros</a> <a href="Doação.html"  id="hyper">Doar</a></nav></header>
 
        <div class="pedinte">
-        <p>Deixe o jornalzinho feliz, <br> mande uma doação. ❤️</p>
-        <img src="Mascote logo.png" alt="">
+        <h3>Doadores</h3>
+        <ul>
+            <li> <span>1</span> Ariel Mitsubishi <span id="quantidade">| R$ 50</span></li>
+            <li><span>2</span> Charles Bentley <span id="quantidade">| R$ 45</span></li>
+            <li><span>3</span> Galvão <span id="quantidade">| R$ 40</span></li>
+            <li><span>4</span>Mia Toyoya <span id="quantidade">| R$ 35</span></li>
+            <li><span>5</span>Kai Suzuki <span id="quantidade">| R$ 30</span></li>
+            <li><span>6</span>João Ford <span id="quantidade">| R$ 25</span></li>
+            <li><span>7</span>Paulo Honda <span id="quantidade">| R$ 20</span></li>
+            <li><span>8</span>Miguel Pagani <span id="quantidade">| R$ 15</span></li>
+            <li><span>9</span>Luiz Fernantes <span id="quantidade">| R$ 15</span></li>
+            <li><span>10</span>Marcos Lifan <span id="quantidade"> | R$ 10</span></li>
+        </ul>
     </div>
 
 
@@ -466,7 +542,6 @@ a{
        <div class="pagamento">
        <h3>Escaneie o QR code</h3>
        <img src="qrcode.png">
-       <p>Escolha um valor</p>
 
        <div class="botoes">
         <button class="botao um">R$ 5</button>
@@ -478,12 +553,14 @@ a{
        </div>
 
        <div class="progresso">
-        <p id="pt">Progresso da campanha</p>
+        <p id="pt">Progresso</p>
         <p id="valor">R$ 15</p>
         <p id="total">A nossa meta é de R$ 30 todo mês</p>
        <progress value="50" max="100"></progress>
        <h3>*As doações nos ajudam a manter o site no ar.</h3>
        </div>
+
+       
        <div class="footer-container">
        <footer>
        <img src="avr.png" id="fotofot">
