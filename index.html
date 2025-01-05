@@ -116,7 +116,7 @@
         padding-bottom:1.5rem;
        }
        .footer-container{
-        margin-top: 30rem;
+        margin-top: 15rem;
         background-color: #2867ce;
         margin-bottom: 0rem;
         text-align: center;
@@ -246,7 +246,7 @@
         flex-wrap: wrap;
         margin-top: -35rem;
         width: 22rem;
-        margin-right: 3vw;
+        margin-right: 5vw;
     }
     .progresso > #pt{
         font-weight: 400;
@@ -312,7 +312,42 @@
     .pedinte #quantidade{
     margin-left: auto;
     }
+    .progresso img{
+        height: 20rem;
+        margin-top: 3rem;
+    }
+    header div{
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            right: 0;
+            margin-top: -1.7rem;
+            font-size: 1.2rem;
+            margin-right: 15rem;
+            column-gap: 0.5rem ;
+            color: white;
+            align-items: center;
+        }
+        #noite{
+            color: black;
+        }
+        #dia{
+            color: #f5e400;
+        }
+        #tarde{
+            color: #FCAD5D;
+        }
+        header img {
+            height: 1.8rem;
+        }
 @media screen and (max-width:1500px){
+    header div{
+        margin-top: -10rem;
+        background-color: #2867ce;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-right: 0;
+    }
     footer {
         height: 25vh;
         column-gap: 3rem;
@@ -337,6 +372,7 @@
     .pedinte {
         margin-left: -2rem;
     }
+   
 }
 @media screen and (max-width:1150px){
 .footer-container{
@@ -377,11 +413,17 @@ a{
     .pedinte li{
         width: 40rem;
     }
+    .progresso img {
+        display: none;
+    }
+    .pagamento{
+        border: none;
+    }
+
 }
 
 
 @media screen and (max-width:769px){
-    
     #hyper{
         padding: 0;
         margin: 0;
@@ -394,6 +436,10 @@ a{
     }
     header{
         max-height: 35px;
+        margin-top: 2rem;
+    }
+    #logo{
+        margin-top: 2rem;
     }
     nav{
         margin-top: 0px;
@@ -401,7 +447,6 @@ a{
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-left: 5vw;
     }
     .footer-heading{
         display: none;
@@ -438,7 +483,7 @@ a{
         justify-content: space-around;
         flex-wrap: wrap;
         row-gap: 0.5;
-        margin-top: 2rem;
+        margin-top: 0.8rem;
         column-gap: 15rem;
        }
        .botao.quatro{
@@ -480,13 +525,12 @@ a{
        }
        .pagamento > h3 {
         text-align: center;
-        font-size: 2rem
        }
        .pagamento > p {
         text-align: center;
        }
        .progresso{
-        margin-top: 8rem;
+        margin-top: 10rem;
        }
        .footer-container{
         margin-top: 45rem;
@@ -494,21 +538,29 @@ a{
        .botao:hover{
         background-color: #2867ce;
         color: white;
-        box-shadow: #c5c5c5 0px 3px;
-        border-radius:0;
+        box-shadow: #c5c5c5 -4px 3px;
        }
-        .botao{
-            box-shadow: #c5c5c5 0px 3px;
-        border-radius:0;
-        }
        .progresso > #pt{
        }
        .pedinte {
-        margin-top: 16rem;
+        margin-top: 20rem;
        }
        .pedinte li{
         width: 95vw;
        }
+       header div{
+        left: 0;
+        margin-top: -13rem;
+        background-color: #2867ce;
+        height: 2.25rem;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+    }
+    header div p{
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (min-width: 769px){
@@ -518,26 +570,26 @@ a{
 }
     </style>
 </head>
-<body>
+<body onload="atualizarTexto()">
     <div id="logodiv">
         <p id="centro"><a href="teste responsivo.html" id="logohref"><img src="avr.png" id="logo"></a></p>
         <p id="txt">O JORNAL DA <span>MAIOR</span>!</p>
        </div>
-       <header> <nav> <a href="" id="hyper">Notícias</a> <a href="Blog rework.html"  id="hyper">Blog</a>  <a href=""  id="hyper">Membros</a> <a href="Doação.html"  id="hyper">Doar</a></nav></header>
+       <header> <nav> <a href="Noticias.html" id="hyper">Notícias</a> <a href="Blog rework.html"  id="hyper">Blog</a>  <a href=""  id="hyper">Membros</a> <a href="Doação.html"  id="hyper">Doar</a> <div><img src="" id="imagem"> <p id="texto-dinamico"></p></div> </nav></header>
 
        <div class="pedinte">
         <h3>Doadores</h3>
         <ul>
-            <li> <span>1</span> Ariel Mitsubishi <span id="quantidade">| R$ 50</span></li>
-            <li><span>2</span> Charles Bentley <span id="quantidade">| R$ 45</span></li>
-            <li><span>3</span> Galvão <span id="quantidade">| R$ 40</span></li>
-            <li><span>4</span>Mia Toyoya <span id="quantidade">| R$ 35</span></li>
-            <li><span>5</span>Kai Suzuki <span id="quantidade">| R$ 30</span></li>
-            <li><span>6</span>João Ford <span id="quantidade">| R$ 25</span></li>
-            <li><span>7</span>Paulo Honda <span id="quantidade">| R$ 20</span></li>
-            <li><span>8</span>Miguel Pagani <span id="quantidade">| R$ 15</span></li>
-            <li><span>9</span>Luiz Fernantes <span id="quantidade">| R$ 15</span></li>
-            <li><span>10</span>Marcos Lifan <span id="quantidade"> | R$ 10</span></li>
+            <li> <span>1</span> Ariel Mitsubishi <span id="quantidade">R$ 50</span></li>
+            <li><span>2</span> Charles Bentley <span id="quantidade">R$ 45</span></li>
+            <li><span>3</span> Galvão <span id="quantidade">R$ 40</span></li>
+            <li><span>4</span>Mia Toyoya <span id="quantidade">R$ 35</span></li>
+            <li><span>5</span>Kai Suzuki <span id="quantidade">R$ 30</span></li>
+            <li><span>6</span>João Ford <span id="quantidade">R$ 25</span></li>
+            <li><span>7</span>Paulo Honda <span id="quantidade">R$ 20</span></li>
+            <li><span>8</span>Miguel Pagani <span id="quantidade">R$ 15</span></li>
+            <li><span>9</span>Luiz Fernantes <span id="quantidade">R$ 15 </span></li>
+            <li><span>10</span>Marcos Lifan <span id="quantidade"> R$ 10</span></li>
         </ul>
     </div>
 
@@ -564,9 +616,31 @@ a{
         <p id="total">A nossa meta é de R$ 30 todo mês</p>
        <progress value="50" max="100"></progress>
        <h3>*As doações nos ajudam a manter o site no ar.</h3>
+       <img src="Mascote logo.png" alt="">
        </div>
 
-       
+       <script> 
+        function atualizarTexto() {
+        var data = new Date();
+        var horas = data.getHours();
+        var mensagem;
+        var imagemSrc;
+        if (horas < 12) {
+        mensagem = 'Bom <span id="dia">dia</span>, leitor.';
+        imagemSrc = 'sol.png'
+        } 
+        else if (horas < 18) {
+        mensagem = 'Boa <span id="tarde">tarde </span>, leitor.'; 
+        imagemSrc = 'solt.png'
+        }
+        else {
+        mensagem = 'Boa <span id="noite">noite</span>, leitor.'; 
+        imagemSrc = 'lua.png'
+        }
+        document.getElementById("texto-dinamico").innerHTML = mensagem;
+        document.getElementById("imagem").src = imagemSrc;
+    } 
+        </script> 
        <div class="footer-container">
        <footer>
        <img src="avr.png" id="fotofot">
@@ -584,7 +658,7 @@ a{
        <div class="footer-heading nav">
         <h2>Navegação</h2>
         <a href="teste responsivo.html" id="linksf">ínicio</a> 
-        <a href="" id="linksf">Notícias</a>
+        <a href="Noticias.html" id="linksf">Notícias</a>
         <a href="Blog rework.html" id="linksf">Blog</a>
         <a href="" id="linksf">Membros</a> 
         <a href="Doação.html" id="linksf">Doar</a> 
